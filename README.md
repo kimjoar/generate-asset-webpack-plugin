@@ -14,16 +14,21 @@ npm install --save-dev generate-asset-webpack-plugin
 Usage
 -----
 
-```
-plugins: [
-    new GenerateAssetPlugin({
-        filename: 'index.html',
-        fn: (compilation, cb) => {
-            cb(null, createHtml(compilation));
-        },
-        extraFiles: ['favicon.ico']
-    })
-]
+```javascript
+var GenerateAssetPlugin = require('generate-asset-webpack-plugin');
+
+var webpackConfig = {
+    plugins: [
+        new GenerateAssetPlugin({
+            filename: 'index.html',
+            fn: (compilation, cb) => {
+                cb(null, createHtml(compilation));
+            },
+            extraFiles: ['favicon.ico']
+        })
+    ]
+    // other webpack config ...
+}
 ```
 
 Example function using the `compilation`:
