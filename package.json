@@ -1,6 +1,6 @@
 {
   "name": "generate-asset-webpack-plugin",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A Webpack plugin for generating assets, e.g. an index.html",
   "main": "dist/index.js",
   "scripts": {
