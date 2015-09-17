@@ -1,0 +1,29 @@
+{
+  "name": "generate-asset-webpack-plugin",
+  "version": "0.1.0",
+  "description": "A Webpack plugin for generating assets, e.g. an index.html",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "mkdir -p dist && babel < index.js > dist/index.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kjbekkelund/generate-asset-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "asset",
+    "index.html"
+  ],
+  "author": "Kim Joar Bekkelund <kjbekkelund@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kjbekkelund/generate-asset-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/kjbekkelund/generate-asset-webpack-plugin#readme",
+  "devDependencies": {
+    "babel": "^5.8.23"
+  }
+}
