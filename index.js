@@ -9,7 +9,7 @@ class GenerateAssetWebpackPlugin {
     }
 
     apply(compiler) {
-        compiler.plugin('emit', (compilation, cb) => {
+        compiler.hooks.emit.tapAsync('GenerateAssetWebpackPlugin', (compilation, cb) => {
             this.fn(compilation, (err, body) => {
                 if (err) {
                     return cb(err);
